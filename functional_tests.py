@@ -2,14 +2,13 @@ from selenium import webdriver
 import unittest
 
 class NewVisitor(unittest.TestCase):
+    
     def setUp(self):
         self.browser = webdriver.Firefox()
-<<<<<<< HEAD
-        self.browser.implicitly_wait(3)
-=======
->>>>>>> 2ce0396db2c9d2ce87f0327165fc0577268e75e1
+
     def tearDown(self):
         self.browser = webdriver.quit()
+
     def tests_can_start_a_list_and_retrive_it_later(self):
         # Edith has heard about a cool new online to-do app. She goes to
         #check out its homepage
